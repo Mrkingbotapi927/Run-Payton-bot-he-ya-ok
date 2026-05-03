@@ -1507,9 +1507,9 @@ def create_subscription_check_message(not_joined_channels):
         channel_name = channel_info.get('name', 'Channel')
         
         if channel_username:
-            channel_link = f"https://t.me/ZeroTraceNums('@', '')}"
+            channel_link = f"https://t.me/c/{channel_id.replace('@', '')}"
         else:
-            channel_link = f"https://t.me/ZeroTraceNums('-100', '')}"
+            channel_link = f"https://t.me/c/{channel_id.replace('-100', '')}"
         
         message += f"• {channel_name}\n"
         markup.add(types.InlineKeyboardButton(f"Join {channel_name}", url=channel_link))

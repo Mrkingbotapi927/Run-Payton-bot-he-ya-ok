@@ -31,7 +31,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "Junaid Niz"
+    return "ZERO RUN"
 
 def run_flask():
     port = int(os.environ.get("PORT", 8080))
@@ -1507,7 +1507,7 @@ def create_subscription_check_message(not_joined_channels):
         channel_name = channel_info.get('name', 'Channel')
         
         if channel_username:
-            channel_link = f"https://t.me/c/{channel_id.replace('@', '')}"
+            channel_link = f"https://t.me/{channel_username.replace('@', '')}"
         else:
             channel_link = f"https://t.me/c/{channel_id.replace('-100', '')}"
         
@@ -2091,7 +2091,7 @@ def remove_admin_db(admin_id):
 def create_main_menu_inline(user_id):
     markup = types.InlineKeyboardMarkup(row_width=2)
     buttons = [
-        types.InlineKeyboardButton(📢 Updates Channel', url=f'https://t.me/{UPDATE_CHANNEL.replace("@", "")}'),
+        types.InlineKeyboardButton('📢 Updates Channel', url=f'https://t.me/{UPDATE_CHANNEL.replace("@", "")}'),
         types.InlineKeyboardButton('📤 Upload File', callback_data='upload'),
         types.InlineKeyboardButton('📂 Check Files', callback_data='check_files'),
         types.InlineKeyboardButton('⚡ Bot Speed', callback_data='speed'),
@@ -2675,7 +2675,7 @@ def _logic_send_welcome(message):
 
 def _logic_updates_channel(message):
     markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton('📢 Updates Channel', url=https://t.me/ZeroTraceNums("@", "")}'))
+    markup.add(types.InlineKeyboardButton('📢 Updates Channel', url=f'https://t.me/{UPDATE_CHANNEL.replace("@", "")}'))
     bot.reply_to(message, "Visit our Updates Channel:", reply_markup=markup)
 
 def _logic_upload_file(message):

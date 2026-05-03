@@ -48,8 +48,8 @@ def keep_alive():
 TOKEN = ('8659836737:AAHqoTduk9qiTegpBF7rqbxTwcQ9uHReAjc')
 OWNER_ID = int(os.getenv('OWNER_ID', 1003233736476))
 ADMIN_ID = int(os.getenv('ADMIN_ID', 8382316368))
-YOUR_USERNAME = os.getenv('YOUR_USERNAME','nizamanipybot')
-UPDATE_CHANNEL = os.getenv('UPDATE_CHANNEL', 'junaidniz')
+YOUR_USERNAME = os.getenv('YOUR_USERNAME','iam_sindhi')
+UPDATE_CHANNEL = os.getenv('UPDATE_CHANNEL', 'ZeroTraceNums')
 
 # Limits from .env or defaults
 FREE_USER_LIMIT = int(os.getenv('FREE_USER_LIMIT', 1))

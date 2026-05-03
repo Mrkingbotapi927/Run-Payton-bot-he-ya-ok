@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-import telebot
 import subprocess
 import os
 import zipfile
 import tempfile
 import shutil
-from telebot import types
 import time
 from datetime import datetime, timedelta
 import psutil

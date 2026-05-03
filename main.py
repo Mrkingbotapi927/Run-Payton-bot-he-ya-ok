@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import telebot
+from telebot import types
 import subprocess
 import os
 import zipfile
